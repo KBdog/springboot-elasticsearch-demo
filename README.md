@@ -1,0 +1,2 @@
+## elasticsearch在springboot中api使用的demo
+使用`RestHighLevelClient`的api对es本地集群进行基础的增删改查
