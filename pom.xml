@@ -17,18 +17,6 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!--pconline自己封装的基本方法-->
-        <dependency>
-            <groupId>cn.com.pconline</groupId>
-            <artifactId>search-common</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.pconline</groupId>
-            <artifactId>search-core</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
