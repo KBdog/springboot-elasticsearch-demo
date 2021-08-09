@@ -30,7 +30,8 @@ public class ElasticSearchController {
     @GetMapping("/q/{keyword}")
     public ResponseResult searchByKeyword(@PathVariable("keyword")String keyword, HttpServletResponse response){
         log.info("keyword:"+keyword);
-        List<JSONObject> results = service.searchByKeyword(keyword, "customer", "desktop", "student", "cms");
+        List<JSONObject> results = service.searchByKeyword(keyword,
+                "customer", "desktop", "student", "cms","new_index");
         if(results!=null&&results.size()>0){
             return ResponseResult.ok(results);
         }else {

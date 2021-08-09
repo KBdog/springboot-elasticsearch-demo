@@ -236,7 +236,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         request.indices(indices);
         SearchSourceBuilder builder=new SearchSourceBuilder();
         //设置查找字段
-        builder.query(QueryBuilders.multiMatchQuery(keyword,"programName","tag","username","address","name")
+        builder.query(QueryBuilders.multiMatchQuery(keyword,"programName","tag","username","address","name","field1")
                             .analyzer("ik_smart"));
         request.source(builder);
         SearchResponse response = null;
